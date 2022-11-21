@@ -223,18 +223,32 @@ fill: currentColor;
 /* Modal Close Button */
 .modal-button {
     color: #aaa;
+    background-color: transparent;
     float: right;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: bold;
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: backdrop;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button:hover,
-.modal-button:focus {
+
+.data-modal-close:hover,
+.data-modal-close:focus {
     color: var(--accent-color);
     text-decoration: none;
     cursor: pointer;
+   
 }
-
+.modal-close-icon {
+fill: currentColor;
+}
+ 
 .is-hidden {
     pointer-events: none;
     opacity: 0%;
@@ -342,7 +356,26 @@ fill: currentColor;
     margin-right: 30px;
 
 }
-
+.do-item {
+    position: relative;
+}
+.do-text-container {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.do-text{
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    Line-height: calc(16.41/14);
+}
 /* TEAM */
 .team-members {
     background-color: #F5F4FA;
