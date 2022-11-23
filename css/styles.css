@@ -124,7 +124,15 @@ img {
     color: var(--link-color);
 
 }
-
+.current-page::after {
+    height: 4px;
+    content: '';
+    width: 48px;
+    background-color: var(--accent-color);
+    position: absolute;
+    top: 77px;
+    left: 380px;
+}
 .header-contact-link {
     color: var(--contact-color);
     font-weight: 500;
@@ -644,6 +652,7 @@ border-radius: 50%;
     flex-basis: calc(100% / 3 - var(--card-gap));
     margin-left: var(--card-gap);
     margin-top: var(--card-gap);
+    cursor: pointer;
 }
   .portfolio-image {
     display: block;
